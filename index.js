@@ -23,7 +23,7 @@ app.use(express.json())
 
 
 app.get('/hello', (req, res) => {
-    res.send('thank you jesus!')
+    res.send('task   manager nodeapp')
 })
 
 app.use('/api/v1/tasks', tasks)
@@ -48,5 +48,4 @@ const start = async() => {
 }
 
 
-start()
 start()
