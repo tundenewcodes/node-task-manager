@@ -20,12 +20,16 @@ app.use(express.json())
 
 
 //routes
-app.use('/api/v1/tasks', tasks)
-app.use(notFound)
-app.use(errorHandlerMiddleWare)
+
+
 app.get('/hello', (req, res) => {
     res.send('thank you jesus!')
 })
+
+app.use('/api/v1/tasks', tasks)
+app.use(notFound)
+app.use(errorHandlerMiddleWare)
+
 const port = process.env.PORT || 3500
 
 
@@ -44,4 +48,5 @@ const start = async() => {
 }
 
 
+start()
 start()
